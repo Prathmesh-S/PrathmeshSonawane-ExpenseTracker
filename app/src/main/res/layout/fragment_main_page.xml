@@ -33,20 +33,19 @@
             android:id="@+id/CategorizedButton"
             android:layout_width="179dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="48dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="56dp"
             android:text="See Categorized List"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.562"
             app:layout_constraintStart_toEndOf="@+id/addExpenseButton"
-            app:layout_constraintTop_toBottomOf="@+id/ResetButton" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/dateSelecter"
             android:layout_width="138dp"
             android:layout_height="40dp"
             android:layout_marginTop="14dp"
-            android:hint="dd_mm_yyyy"
+            android:hint="dd/mm/yyyy"
             android:inputType="date"
             app:layout_constraintEnd_toStartOf="@+id/FilterButton"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,24 +54,13 @@
         <Button
             android:id="@+id/FilterButton"
             android:layout_width="179dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="20dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="4dp"
             android:text="Filter By Date"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.931"
+            app:layout_constraintHorizontal_bias="0.909"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/CategorizedButton" />
-
-        <Button
-            android:id="@+id/ResetButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Reset Expenses"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.585"
-            app:layout_constraintStart_toEndOf="@+id/mainFragmentTitle"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <Spinner
             android:id="@+id/spinnerCategoryFilter"
@@ -86,15 +74,12 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/expensesRecyclerView"
-            android:layout_width="390dp"
-            android:layout_height="467dp"
-            android:layout_marginTop="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="401dp"
+            android:layout_height="375dp"
+            android:layout_marginTop="32dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.238"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/spinnerCategoryFilter"
-            app:layout_constraintVertical_bias="0.272"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerCategoryFilter"
             tools:listitem="@layout/item_expense" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
